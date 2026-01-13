@@ -1,0 +1,1 @@
+# device_infinix_X6815D
