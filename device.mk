@@ -345,8 +345,5 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/etc/fstab.emmc:$(TARGET_VENDOR_RAMDISK_OUT)/first_stage_ramdisk/fstab.emmc
 
-# Shipping API Level
-PRODUCT_SHIPPING_API_LEVEL := 29
-
 # Inherit the proprietary files
 $(call inherit-product, vendor/infinix/X6815D/X6815D-vendor.mk)
