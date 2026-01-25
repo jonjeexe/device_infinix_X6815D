@@ -6,8 +6,15 @@
 # Enable updating of APEXes
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 
+# Installs gsi keys into ramdisk, to boot a developer GSI with verified boot.
+$(call inherit-product, $(SRC_TARGET_DIR)/product/developer_gsi_keys.mk)
+
 # A/B
 $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota.mk)
+
+# Dynamic Partitions
+PRODUCT_USE_DYNAMIC_PARTITIONS := true
+PRODUCT_BUILD_SUPER_PARTITION := false
 
 PRODUCT_PACKAGES += \
     android.hardware.boot@1.2-impl \
@@ -37,10 +44,7 @@ PRODUCT_PACKAGES += \
     android.hardware.health@2.1-service
 
 # Overlays
-PRODUCT_ENFORCE_RRO_TARGETS := *
-
-# Partitions
-PRODUCT_USE_DYNAMIC_PARTITIONS := true
+# PRODUCT_ENFORCE_RRO_TARGETS := *
 
 # Rootdir
 PRODUCT_PACKAGES += \

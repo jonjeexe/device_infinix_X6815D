@@ -19,7 +19,3 @@ PRODUCT_BRAND := Infinix
 PRODUCT_MANUFACTURER := infinix
 
 PRODUCT_GMS_CLIENTID_BASE := android-infinix
-
-PRODUCT_BUILD_PROP_OVERRIDES += \
-    BuildDesc="sys_tssi_64_armv82_infinix-user 13 TP1A.220624.014 432780 release-keys" \
-    BuildFingerprint := Infinix/TSSI/FULL-64-ARMV82:13/TP1A.220624.014/230918V292:user/release-keys
