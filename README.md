@@ -1,4 +1,4 @@
-# Android device tree for Infinix  (X6815D)
+## Android device tree for Infinix  (X6815D)
 
 ```
 #
